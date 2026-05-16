@@ -1,0 +1,417 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f9f4ea;
+  color: #444;
+  overflow-x: hidden;
+}
+
+.hidden {
+  display: none;
+}
+/* ENVELOPE */
+
+.envelope-screen {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(135deg, #980000, #c30000);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.envelope {
+  width: 350px;
+  height: 500px;
+  background: #b30000;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+}
+
+.envelope::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:
+  linear-gradient(135deg, transparent 50%, #8b0000 50%),
+  linear-gradient(225deg, transparent 50%, #8b0000 50%);
+  background-size: 100% 100%;
+}
+.tap-text {
+  position: absolute;
+  top: 160px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-family: 'Great Vibes', cursive;
+  font-size: 35px;
+  z-index: 10;
+}
+
+.seal {
+  width: 120px;
+  height: 120px;
+  background: #f5e2c8;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 34px;
+  cursor: pointer;
+  z-index: 11;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+.bottom-text {
+  position: absolute;
+  bottom: 100px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-family: 'Chilanka', cursive;
+  font-size: 32px;
+}
+
+/* MAIN */
+
+.invitation {
+  padding: 30px 18px;
+}
+
+.card {
+  background: white;
+  border-radius: 30px;
+  padding: 40px 25px;
+  margin-bottom: 30px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.hero {
+  text-align: center;
+}
+
+.ganesh {
+  position: absolute;
+  bottom: 100px;
+  width: 100%;
+  }
+.name {
+  font-family: "Noto Serif Malayalam", serif;
+  color: #5d7b4d;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+.msg {
+  font-family: "Noto Serif Malayalam", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  
+
+}
+.high {
+  font-family: "Noto Serif Malayalam", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+  /* SAVE DATE */
+
+.save-date {
+  text-align: center;
+}
+
+.mini-title {
+  letter-spacing: 4px;
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+
+.save-date h2,
+.story-section h2,
+.events-section h2,
+.countdown h2,
+footer h2 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 58px;
+  color: #5d7b4d;
+  margin-bottom: 10px;
+}
+
+.sub-text {
+  margin-bottom: 30px;
+}
+
+.scratch-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+.scratch-card {
+  width: 100px;
+  height: 140px;
+  background: #eef7e8;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.real-text {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 34px;
+  color: #5d7b4d;
+}
+
+canvas {
+  position: absolute;
+  inset: 0;
+}/* COUNTDOWN */
+
+.countdown {
+  text-align: center;
+}
+
+.timer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.timer span {
+  display: block;
+  font-size: 38px;
+  font-weight: 600;
+}
+
+.timer small {
+  letter-spacing: 2px;
+}
+/* STORY */
+
+.story-section {
+  text-align: center;
+}
+
+.story-card {
+  margin-top: 30px;
+}
+
+.story-card button {
+  border: none;
+  background: #f4ead7;
+  padding: 10px 22px;
+  border-radius: 50px;
+  margin-bottom: 20px;
+}
+
+.story-card p {
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+
+.story-card img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+/* EVENTS */
+
+.events-section {
+  text-align: center;
+}
+
+.event-card {
+  margin-top: 30px;
+}
+
+.event-card img {
+  width: 100%;
+  border-radius: 25px;
+  margin-bottom: 20px;
+}
+
+.event-card h3 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 46px;
+  margin-bottom: 10px;
+}
+
+.map-btn {
+  margin-top: 20px;
+  border: none;
+  background: #4d8c47;
+  color: white;
+  padding: 14px 30px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+/* FOOTER */
+
+footer {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+footer p {
+  margin-top: 10px;
+}
+/* RESPONSIVE */
+
+@media(max-width: 600px) {
+
+  .name {
+    font-size: 58px;
+  }
+
+  .save-date h2,
+  .story-section h2,
+  .events-section h2,
+  .countdown h2,
+  footer h2 {
+    font-size: 50px;
+  }
+
+  .scratch-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .timer {
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+}
+.day-label {
+  letter-spacing: 4px;
+  font-size: 12px;
+  margin-bottom: 25px;
+  color: #666;
+}.map-box {
+  margin-top: 20px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.msg{
+  border: none;
+  background: white;
+  padding: 10px 22px;
+  border-radius: 50px;
+  margin-bottom: 20px;
+}
+
+.timeline {
+  margin-top: 40px;
+}
+.theme-line {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.timeline-container {
+  position: relative;
+  margin-top: 20px;
+}
+.timeline-container::before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: 0;
+  width: 3px;
+  height: 100%;
+  background: #cdd8c5;
+}
+
+.timeline-item {
+  display: flex;
+  gap: 25px;
+  margin-bottom: 35px;
+  position: relative;
+}
+.dot {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #7e9b70;
+  position: relative;
+  z-index: 2;
+  margin-top: 18px;
+}
+.timeline-box {
+  background: white;
+  padding: 22px;
+  border-radius: 20px;
+  width: 100%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.timeline-box span {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.timeline-box h3 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 38px;
+  color: #5d7b4d;
+}
+
+.final-message {
+  text-align: center;
+}
+
+.final-message p {
+  line-height: 1.9;
+  margin-top: 20px;
+}
+.signature {
+  margin-top: 35px;
+  font-family: 'Great Vibes', cursive;
+  font-size: 48px;
+  color: #5d7b4d;
+}
+
+.reception-card img,
+.muhurtham-card img {
+  border-radius: 30px;
+}
+.whatsapp-share {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.whatsapp-share button {
+  background: #25D366;
+  color: white;
+  border: none;
+  padding: 14px 25px;
+  font-size: 16px;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.whatsapp-share button:hover {
+  background: #1ebe5d;
+}
