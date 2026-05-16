@@ -102,7 +102,7 @@ With love, we invite you to celebrate our special day ❤️
 
 ${inviteLink}`;
   
- const url = "https://ajesh-and-athira.vercel.app/index.html" + encodeURIComponent(message);
+ const url = "wedding-2-git-main-abhimanyuo2006-6255s-projects.vercel.app" + encodeURIComponent(message);
 
   window.open(url, "_blank");
 }
