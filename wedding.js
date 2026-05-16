@@ -94,15 +94,16 @@ canvases.forEach((canvas) => {
 });
 function shareWhatsApp() {
 
-  const inviteLink = window.location.href;
+    const inviteLink = "https://ajesh-and-athira.vercel.app/";
 
-const message = `💍 Wedding Invitation 💍
+    const message = `💍 Wedding Invitation 💍
 
 With love, we invite you to celebrate our special day ❤️
 
 ${inviteLink}`;
-  
- const url = "https://wedding-2-n1ostz6yg-abhimanyuo2006-6255s-projects.vercel.app/" + encodeURIComponent(message);
 
-  window.open(url, "_blank");
+    const url =
+    "https://wa.me/?text=" + encodeURIComponent(message);
+
+    window.open(url, "_blank");
 }
