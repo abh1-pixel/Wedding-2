@@ -102,7 +102,7 @@ With love, we invite you to celebrate our special day ❤️
 
 ${inviteLink}`;
   
- const url = "https://ajesh-and-athira.vercel.app/" + encodeURIComponent(message);
+ const url = "https://ajesh-and-athira.vercel.app/index.html" + encodeURIComponent(message);
 
   window.open(url, "_blank");
 }
