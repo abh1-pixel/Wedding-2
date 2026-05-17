@@ -107,3 +107,27 @@ ${inviteLink}`;
 
     window.open(url, "_blank");
 }
+window.addEventListener("scroll", function () {
+
+    const instaBtn =
+        document.getElementById("instaBtn");
+
+    const scrollTop =
+        window.scrollY;
+
+    const windowHeight =
+        window.innerHeight;
+
+    const fullHeight =
+        document.body.scrollHeight;
+
+    // show button near bottom
+    if (scrollTop + windowHeight >= fullHeight - 200) {
+
+        instaBtn.classList.add("show");
+
+    } else {
+
+        instaBtn.classList.remove("show");
+    }
+});
