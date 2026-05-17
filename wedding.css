@@ -416,6 +416,7 @@ footer p {
   background: #1ebe5d;
 }
 .insta-button {
+
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -434,11 +435,18 @@ footer p {
 
     z-index: 9999;
 
-    transition: 0.3s;
+    opacity: 0;
+    visibility: hidden;
+
+    transform: translateY(20px);
+
+    transition: all 0.4s ease;
 }
 
-.insta-button:hover {
-    transform: scale(1.1);
+.insta-button.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
 }
 
 .insta-button img {
