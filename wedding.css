@@ -415,3 +415,33 @@ footer p {
 .whatsapp-share button:hover {
   background: #1ebe5d;
 }
+.insta-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+    width: 55px;
+    height: 55px;
+
+    background: white;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+
+    z-index: 9999;
+
+    transition: 0.3s;
+}
+
+.insta-button:hover {
+    transform: scale(1.1);
+}
+
+.insta-button img {
+    width: 30px;
+    height: 30px;
+}
